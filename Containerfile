@@ -11,5 +11,5 @@ RUN mkdir /structure/sync-work
 USER nobody
 RUN mkdir /structure/nobody-work
 USER root
-CMD ["/usr/sbin/httpd", "-D", "FOREGROUND"]
+ENTRYPOINT ["/usr/sbin/httpd", "-D", "FOREGROUND"]
 
